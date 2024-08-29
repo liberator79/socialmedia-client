@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import App from './App'
 import './index.css'
 import appReducer from "./store/app"
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
+
+
+
 import {
   persistStore,
   persistReducer,
