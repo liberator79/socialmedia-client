@@ -21,11 +21,10 @@ const darkTheme = createTheme({
 function App() {
   const user = useSelector((store) => store.user);
   return (
-    <div>
+    <div className="bg-[rgb(14,19,20)] w-[100%] min-h-[100vh]">
       <ThemeProvider theme={darkTheme}>
 
         <BrowserRouter>
-          <Navbar />
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/" element={user ? <Home /> : <Navigate to = "/login" />} />

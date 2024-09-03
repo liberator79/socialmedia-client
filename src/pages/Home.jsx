@@ -1,9 +1,13 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
+import SideBar from '../components/SideBar'
 const Home = () => {
   return (
-    <div> 
-      Home Page
+    <div className='grid grid-cols-12 h-[100vh]'>
+      <div className='col-span-3'>
+        <SideBar />
+      </div>
+      <div className='col-span-6'></div>
+      <div className='col-span-3'></div>
     </div>
   )
 }
